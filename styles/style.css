@@ -276,18 +276,18 @@ body {
 
 header {
   text-align: center;
+  background: url(../assets/bg@1X_2a.png);
   background-position: bottom;
   height: 100vh;
 }
 
 .header-overlay {
-  background: url(../assets/bg@1X_1a.png);
+  background: url(../assets/Watermarkbg1X3.png);
   background-position: bottom;
   height: 90vh;
 }
 
 .header-overlay2 {
-  background: url(../assets/color@1X_3a.png);
   background-position: bottom;
   height: 80vh;
 }
@@ -307,7 +307,7 @@ h2 {
   opacity: 0.7;
 }
 
-ul {
+.header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,4 +330,37 @@ ul {
   width: 15%;
   border-radius: 50%;
   border: 10px outset #504ACB;
+}
+
+.about-bkgd {
+  padding: 40px 0;
+  background: url(../assets/Shape21X.png);
+  background-repeat: no-repeat;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+}
+
+.about-container img {
+  width: 40%;
+  border-radius: 12% 0% 0% 42% / 29% 10% 10% 86%;
+  margin-right: 30px;
+}
+
+.skills-bkgd {
+  background: url(../assets/bg1X2.png);
+  margin: 40px 0;
+}
+
+.skills-container {
+  font-size: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  text-align: center;
 }

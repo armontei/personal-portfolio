@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amanda Monteiro | Web Developer</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/34b6f92998.js" crossorigin="anonymous"></script>
+
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -15,40 +27,84 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <!-- HEADER -->
     <header>
         <div class="header-overlay">
             <div class="header-overlay2">
 
+                <!-- Navigation -->
                 <nav calss="wrapper">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Skills</a></li>
+                    <ul class="header-nav">
+                        <li><a href="#index">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
                         <li><a href="">Projects</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
         
                 <h1>Amanda Monteiro</h1>
-                <h2>Web Developer</h2>
+                <h2>Front-End Web Developer</h2>
 
+                <!-- Header profile picture -->
                 <div class="header-avatar">
                     <img src="./assets/IMG_20201015_145055_786.jpg" alt="">
                 </div>
-
             </div>
         </div>
     </header>
 
+    <!-- MAIN CONTENT -->
     <main>
+        <!-- About section -->
+        <section id="about" class="about-bkgd">
+            <div class="wrapper about-container">
+
+                <img src="./assets/IMG_20201015_145055_786.jpg" alt="">
+    
+                <div>
+                    <h3>Get to know me</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et impedit veniam commodi non optio, laboriosam ullam ex repudiandae repellat architecto suscipit quae nisi dolorum deserunt accusamus. Cum deleniti sit, sequi non aliquid veritatis et id, accusantium ex a expedita quos!</p>
+                </div>
+            </div>            
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills" class="skills-bkgd">
+
+            <div class="wrapper">
+
+                <h3>Some of my Skills</h3>
+                
+                <ul class="skills-container">
+                    <li><i class="devicon-html5-plain colored"></i></li>
+                    <li><i class="devicon-css3-plain colored"></i></li>
+                    <li><i class="devicon-sass-original colored"></i></li>
+                    <li><i class="devicon-javascript-plain colored"></i></li>
+                    <li><i class="devicon-jquery-plain colored"></i></li>
+                    <li><i class="devicon-react-original colored"></i></li>
+                    <li><span class="iconify" data-icon="simple-icons:firebase" data-inline="false"></span></li>
+                    <li><span class="iconify" data-icon="clarity:devices-solid" data-inline="false"></span></li>
+                    <li><i class="devicon-git-plain colored"></i></li>
+                    <li><i class="devicon-github-original colored"></i></li>
+                    <li><span class="iconify" data-icon="mdi:api" data-inline="false"></span></li>
+                    <li><i class="fas fa-universal-access"></i></li>
+                    <!-- <li><i class="devicon-trello-plain colored"></i></li> -->
+                </ul>
+            </div>
+            
+            
+        </section>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        
+        Created by Amanda Monteiro
     </footer>
 </body>
 </html>

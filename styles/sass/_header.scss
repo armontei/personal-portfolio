@@ -1,6 +1,6 @@
 header {
     text-align: center;
-    // background: url(../assets/bg@1X_2a.png);
+    background: url(../assets/bg@1X_2a.png);
     // background-size: cover;
     background-position: bottom;
     // background-repeat: no-repeat;
@@ -8,13 +8,14 @@ header {
 }
 
 .header-overlay {
-    background: url(../assets/bg@1X_1a.png);
+    // background: url(../assets/bg@1X_1a.png);
+    background: url(../assets/Watermarkbg1X3.png);
     background-position: bottom;
     height: 90vh;
 }
 
 .header-overlay2 {
-    background: url(../assets/color@1X_3a.png);
+    // background: url(../assets/color@1X_3a.png);
     background-position: bottom;
     height: 80vh;
     
@@ -36,7 +37,7 @@ h2 {
 }
 
 
-ul {
+.header-nav {
     display: flex;
     justify-content: end;
 }

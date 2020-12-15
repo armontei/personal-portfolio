@@ -1,0 +1,13 @@
+.skills-bkgd {
+    background: url(../assets/bg1X2.png);
+    margin: 40px 0;
+}
+
+.skills-container {
+    font-size: 5rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    // grid-template-rows: 30px 30px;
+    // grid-auto-flow: row;
+    text-align: center;
+}
