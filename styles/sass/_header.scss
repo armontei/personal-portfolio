@@ -1,0 +1,53 @@
+header {
+    text-align: center;
+    // background: url(../assets/bg@1X_2a.png);
+    // background-size: cover;
+    background-position: bottom;
+    // background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header-overlay {
+    background: url(../assets/bg@1X_1a.png);
+    background-position: bottom;
+    height: 90vh;
+}
+
+.header-overlay2 {
+    background: url(../assets/color@1X_3a.png);
+    background-position: bottom;
+    height: 80vh;
+    
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: $heading;
+    font-weight: 700;
+    color: white;
+    opacity: 0.7;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    opacity: 0.7;
+}
+
+
+ul {
+    display: flex;
+    justify-content: end;
+}
+
+.header-avatar {
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+    img {
+        width: 15%;
+        border-radius: 50%;
+        border: 10px outset #504ACB;
+    }
+}
