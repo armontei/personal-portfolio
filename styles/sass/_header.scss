@@ -1,27 +1,19 @@
 header {
     text-align: center;
-    background: url(../assets/bg@1X_2a.png);
-    // background-size: cover;
+    background: url(../assets/bg1X2b.png);
     background-position: bottom;
-    // background-repeat: no-repeat;
     height: 100vh;
 }
 
 .header-overlay {
-    // background: url(../assets/bg@1X_1a.png);
     background: url(../assets/Watermarkbg1X3.png);
     background-position: bottom;
     height: 90vh;
 }
 
-.header-overlay2 {
-    // background: url(../assets/color@1X_3a.png);
-    background-position: bottom;
-    height: 80vh;
-    
-}
-
 h1 {
+    margin-top: 0;
+    padding-top: 70px;
     font-size: 6rem;
     font-family: $heading;
     font-weight: 700;
@@ -39,16 +31,29 @@ h2 {
 
 .header-nav {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: rgba($color: white, $alpha: 0.2);
+    font-family: $heading;
+    font-weight: 700;
+    color: black;
+    padding-right: 10%;
+    li {
+        margin-left: 20px;
+    }
 }
 
 .header-avatar {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    margin-top: 80px;
+    text-align: center;
     opacity: 0.8;
-    img {
-        width: 15%;
-        border-radius: 50%;
-        border: 10px outset #504ACB;
-    }
+    width: 20%;
+    border-radius: 50%;
+    border: 10px outset #504ACB;
 }

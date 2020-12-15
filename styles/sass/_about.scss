@@ -1,4 +1,5 @@
 .about-bkgd {
+    margin: 40px 0;
     padding: 40px 0;
     background: url(../assets/Shape21X.png);
     background-repeat: no-repeat;
@@ -9,9 +10,14 @@
 .about-container {
     display: flex;
     padding: 15px;
+    height: 80vh;
     img {
-        width: 40%;
+        padding: 20px;
+        width: auto;
         border-radius: 12% 0% 0% 42% / 29% 10% 10% 86% ;
         margin-right: 30px;
+    }
+    div {
+        padding-top: 20px;
     }
 }

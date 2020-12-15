@@ -19,11 +19,11 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -33,17 +33,17 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="header-overlay">
-            <div class="header-overlay2">
+        <div id="home" class="header-overlay">
+            <div class="wrapper">
 
                 <!-- Navigation -->
-                <nav calss="wrapper">
+                <nav>
                     <ul class="header-nav">
-                        <li><a href="#index">Home</a></li>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
         
@@ -51,9 +51,7 @@
                 <h2>Front-End Web Developer</h2>
 
                 <!-- Header profile picture -->
-                <div class="header-avatar">
-                    <img src="./assets/IMG_20201015_145055_786.jpg" alt="">
-                </div>
+                <img class="header-avatar" src="./assets/IMG_20201015_145055_786.jpg" alt="">
             </div>
         </div>
     </header>
@@ -78,28 +76,112 @@
 
             <div class="wrapper">
 
-                <h3>Some of my Skills</h3>
+                <h3>Skills I've Learned So Far</h3>
                 
                 <ul class="skills-container">
-                    <li><i class="devicon-html5-plain colored"></i></li>
-                    <li><i class="devicon-css3-plain colored"></i></li>
-                    <li><i class="devicon-sass-original colored"></i></li>
-                    <li><i class="devicon-javascript-plain colored"></i></li>
-                    <li><i class="devicon-jquery-plain colored"></i></li>
-                    <li><i class="devicon-react-original colored"></i></li>
-                    <li><span class="iconify" data-icon="simple-icons:firebase" data-inline="false"></span></li>
-                    <li><span class="iconify" data-icon="clarity:devices-solid" data-inline="false"></span></li>
-                    <li><i class="devicon-git-plain colored"></i></li>
-                    <li><i class="devicon-github-original colored"></i></li>
-                    <li><span class="iconify" data-icon="mdi:api" data-inline="false"></span></li>
-                    <li><i class="fas fa-universal-access"></i></li>
+                    <li>
+                        <i class="fas fa-universal-access"></i>
+                        <p class="skills-label">Accessibility</p>
+                    </li>
+                    <li>
+                        <i class="devicon-html5-plain colored"></i>
+                        <p class="skills-label">HTML</p>
+                    </li>
+                    <li>
+                        <i class="devicon-css3-plain colored"></i>
+                        <p class="skills-label">CSS</p>
+                    </li>
+                    <li>
+                        <i class="devicon-sass-original colored"></i>
+                        <p class="skills-label">Sass</p>
+                    </li>
+                    <li>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <p class="skills-label">JavaScript</p>
+                    </li>
+                    <li>
+                        <i class="devicon-jquery-plain colored"></i>
+                        <p class="skills-label">jQuery</p>
+                    </li>
+                    <li>
+                        <span class="iconify" data-icon="mdi:api" data-inline="false"></span>
+                        <p class="skills-label">Rest API</p>
+                    </li>
+                    <li>
+                        <i class="devicon-react-original colored"></i>
+                        <p class="skills-label">React</p>
+                    </li>
+                    <li>
+                        <span class="iconify" data-icon="simple-icons:firebase" data-inline="false"></span>
+                        <p class="skills-label">Firebase</p>
+                    </li>
+                    <li>
+                        <span class="iconify" data-icon="clarity:devices-solid" data-inline="false"></span>
+                        <p class="skills-label">Responsive Design</p>
+                    </li>
+                    <li>
+                        <i class="devicon-git-plain colored"></i>
+                        <p class="skills-label">Git</p>
+                    </li>
+                    <li>
+                        <i class="devicon-github-original colored"></i>
+                        <p class="skills-label">GitHub</p>
+                    </li>
                     <!-- <li><i class="devicon-trello-plain colored"></i></li> -->
                 </ul>
-            </div>
-            
-            
+            </div>           
         </section>
 
+        <!-- Projects Section -->
+        <section id="projects" class="projects-bkgd">
+            <div class="wrapper">
+
+                <h3>Projects I've Enjoyed Making</h3>
+    
+                <div class="projects-flex">
+                    <img src="./assets/cleannie.JPG" alt="">                 
+                    <div>
+                        <h4>I Dream of Cleannie</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in accusamus amet eos doloribus, dolorem aliquid facilis nisi consequatur itaque.</p>
+                        <p>HTML | SCSS | JavaScript | React | Firebase | Accessibility | Responsive Design</p>
+                        <a href="https://armontei.github.io/amanda-monteiro-project-5/">Live Site</a>
+                        <a href="https://github.com/armontei/amanda-monteiro-project-5">View Code</a>
+                    </div>
+                </div>
+
+                <div class="projects-flex">
+                    <div>
+                        <h4>A Moment of Calm</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in accusamus amet eos doloribus, dolorem
+                            aliquid facilis nisi consequatur itaque.</p>
+                        <p>HTML | SCSS | JavaScript | jQuery | Accessibility | Responsive Design</p>
+                        <a href="https://armontei.github.io/amanda-monteiro-project-3/">Live Site</a>
+                        <a href="https://github.com/armontei/amanda-monteiro-project-3">View Code</a>
+                    </div>
+                    <img src="./assets/calm.JPG" alt="">
+                </div>
+
+                <div class="projects-flex">
+                    <img src="./assets/restaurant.JPG" alt="">
+                    <div>
+                        <h4>The Restaurant Mall</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in accusamus amet eos doloribus, dolorem
+                            aliquid facilis nisi consequatur itaque.</p>
+                        <p>HTML | SCSS | PSD Conversion | Accessibility | Responsive Design</p>
+                        <a href="https://armontei.github.io/amanda-monteiro-project-2/">Live Site</a>
+                        <a href="https://github.com/armontei/amanda-monteiro-project-2">View Code</a>
+                    </div>              
+                </div>
+
+            </div> <!-- wrapper div -->
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-bkgd">
+
+        </section>
+
+        <script src="./script.js"></script>
     </main>
 
     <!-- FOOTER -->
