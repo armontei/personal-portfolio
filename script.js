@@ -5,6 +5,7 @@
 // nav fixed
 // contact icons fixed
 // social media links in bubbles inside header
+// bonce in animation
 
 // let skillHover = document.getElementsByClassName("skills-label");
 
@@ -17,24 +18,24 @@
 //     }, false);
 // }
 
-(function () {
+// (function () {
 
-    let skillHover = document.getElementsByClassName("skills-label");
+//     let skillHover = document.getElementsByClassName("skills-label");
 
-    for (let i = 0; i < skillHover.length; i++) {
+//     for (let i = 0; i < skillHover.length; i++) {
 
-        function showLabel(e) {
-            e.target.style.opacity = 1;
-        }
+//         function showLabel(e) {
+//             e.target.style.opacity = 1;
+//         }
     
-        function hideLabel(e) {
-            e.target.style.opacity = 0;
-        }
+//         function hideLabel(e) {
+//             e.target.style.opacity = 0;
+//         }
     
-        skillHover[i].onmouseover = showLabel;
-        skillHover[i].onmouseleave = hideLabel;
-    }
+//         skillHover[i].onmouseover = showLabel;
+//         skillHover[i].onmouseleave = hideLabel;
+//     }
 
 
-})();
+// })();
 

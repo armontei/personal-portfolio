@@ -20,5 +20,8 @@
 
 .skills-label {
     opacity: 0;
-    // transform: scale(1.5);
+}
+
+.skills-label:hover {
+    opacity: 1;
 }

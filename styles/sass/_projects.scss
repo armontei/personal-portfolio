@@ -1,7 +1,6 @@
 .projects-bkgd {
     min-height: 90vh;
-    background-color: white;
-    background: url(../assets/imagebg1X.jpg);
+    // background: url(../assets/imagebg1X.jpg);
     // background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,4 +8,7 @@
 
 .projects-flex {
     display: flex;
+    img {
+        width: 50%;
+    }
 }

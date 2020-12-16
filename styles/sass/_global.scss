@@ -1,6 +1,12 @@
 html {
-    // background-color: #2a287c;
     background: url(../assets/139991X3.png);
+}
+
+h1,
+h3,
+h4 {
+    font-family: $heading;
+    letter-spacing: 1.5px;
 }
 
 body {
