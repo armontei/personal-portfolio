@@ -269,6 +269,10 @@ img {
   display: block;
 }
 
+html {
+  background: url(../assets/139991X3.png);
+}
+
 body {
   font-size: 2rem;
   font-family: Georgia, serif;
@@ -276,15 +280,11 @@ body {
 
 header {
   text-align: center;
-  background: url(../assets/bg1X2b.png);
+  background: url(../assets/bg1X2b2.png);
   background-position: bottom;
-  height: 100vh;
-}
-
-.header-overlay {
-  background: url(../assets/Watermarkbg1X3.png);
-  background-position: bottom;
-  height: 90vh;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
 }
 
 h1 {
@@ -305,6 +305,7 @@ h2 {
 }
 
 .header-nav {
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,6 +339,49 @@ h2 {
   border: 10px outset #504ACB;
 }
 
+.links-circle {
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  font-size: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: rgba(80, 74, 203, 0.5);
+}
+
+.links-circle:hover {
+  background-color: #504acb;
+}
+
+.twitter-circle {
+  width: 9rem;
+  height: 9rem;
+  top: 500px;
+  left: 33%;
+}
+
+.github-circle {
+  width: 11rem;
+  height: 11rem;
+  top: 300px;
+  left: 70%;
+}
+
+.linkedIn-circle {
+  width: 12rem;
+  height: 12rem;
+  top: 210px;
+  left: 20%;
+}
+
 .about-bkgd {
   margin: 40px 0;
   padding: 40px 0;
@@ -349,13 +393,17 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px;
-  height: 80vh;
+  min-height: 90vh;
 }
 
 .about-container img {
   padding: 20px;
-  width: auto;
+  width: 40vw;
+  height: 40vw;
   border-radius: 12% 0% 0% 42% / 29% 10% 10% 86%;
   margin-right: 30px;
 }
@@ -376,7 +424,7 @@ h2 {
   -ms-grid-columns: 25% 25% 25% 25%;
       grid-template-columns: 25% 25% 25% 25%;
   text-align: center;
-  height: 80vh;
+  min-height: 90vh;
 }
 
 .skills-container li i,
@@ -388,8 +436,23 @@ h2 {
   opacity: 0;
 }
 
+.projects-bkgd {
+  min-height: 90vh;
+  background-color: white;
+  background: url(../assets/imagebg1X.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .projects-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contact-bkgd {
+  min-height: 90vh;
+  background: url(../assets/bg1X8.png);
+  background-repeat: no-repeat;
+  background-position: right;
 }

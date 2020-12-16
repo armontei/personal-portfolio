@@ -9,11 +9,13 @@
 
 .about-container {
     display: flex;
+    align-items: center;
     padding: 15px;
-    height: 80vh;
+    min-height: 90vh;
     img {
         padding: 20px;
-        width: auto;
+        width: 40vw;
+        height: 40vw;
         border-radius: 12% 0% 0% 42% / 29% 10% 10% 86% ;
         margin-right: 30px;
     }

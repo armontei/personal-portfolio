@@ -23,16 +23,16 @@
 
     for (let i = 0; i < skillHover.length; i++) {
 
-        function showDiv(e) {
+        function showLabel(e) {
             e.target.style.opacity = 1;
         }
     
-        function hideDiv(e) {
+        function hideLabel(e) {
             e.target.style.opacity = 0;
         }
     
-        skillHover[i].onmouseover = showDiv;
-        skillHover[i].onmouseleave = hideDiv;
+        skillHover[i].onmouseover = showLabel;
+        skillHover[i].onmouseleave = hideLabel;
     }
 
 

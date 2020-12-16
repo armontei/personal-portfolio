@@ -32,10 +32,9 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
-        <div id="home" class="header-overlay">
+    <header id="home">
+        <!-- <div class="header-overlay"> -->
             <div class="wrapper">
-
                 <!-- Navigation -->
                 <nav>
                     <ul class="header-nav">
@@ -52,8 +51,26 @@
 
                 <!-- Header profile picture -->
                 <img class="header-avatar" src="./assets/IMG_20201015_145055_786.jpg" alt="">
-            </div>
-        </div>
+
+                <a href="https://twitter.com/amandamcodes" aria-label="Twitter">
+                    <div class="links-circle twitter-circle">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </a>
+
+                <a href="https://github.com/armontei" aria-label="GitHub">
+                    <div class="links-circle github-circle">
+                        <i class="fab fa-github"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/amandamonteiro-3/" aria-label="LinkedIn">
+                    <div class="links-circle linkedIn-circle">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </a>
+            </div> <!-- wrapper div -->
+        <!-- </div> header-overlay div -->
     </header>
 
     <!-- MAIN CONTENT -->
@@ -124,7 +141,7 @@
                         <p class="skills-label">Git</p>
                     </li>
                     <li>
-                        <i class="devicon-github-original colored"></i>
+                        <i class="fab fa-github"></i>
                         <p class="skills-label">GitHub</p>
                     </li>
                     <!-- <li><i class="devicon-trello-plain colored"></i></li> -->
@@ -139,7 +156,7 @@
                 <h3>Projects I've Enjoyed Making</h3>
     
                 <div class="projects-flex">
-                    <img src="./assets/cleannie.JPG" alt="">                 
+                    <img src="./assets/cleannie.png" alt="">                 
                     <div>
                         <h4>I Dream of Cleannie</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in accusamus amet eos doloribus, dolorem aliquid facilis nisi consequatur itaque.</p>
@@ -158,11 +175,11 @@
                         <a href="https://armontei.github.io/amanda-monteiro-project-3/">Live Site</a>
                         <a href="https://github.com/armontei/amanda-monteiro-project-3">View Code</a>
                     </div>
-                    <img src="./assets/calm.JPG" alt="">
+                    <img src="./assets/calm.png" alt="">
                 </div>
 
                 <div class="projects-flex">
-                    <img src="./assets/restaurant.JPG" alt="">
+                    <img src="./assets/restaurant.png" alt="">
                     <div>
                         <h4>The Restaurant Mall</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in accusamus amet eos doloribus, dolorem
@@ -178,7 +195,22 @@
 
         <!-- Contact Section -->
         <section id="contact" class="contact-bkgd">
-
+            <div class="wrapper">
+                <h3>Contact me!</h3>
+    
+                <form action="">
+                    <label for="">Name</label>
+                    <input type="text">
+    
+                    <label for="">Email</label>
+                    <input type="email">
+    
+                    <label for="">Message</label>
+                    <input type="text">
+    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </section>
 
         <script src="./script.js"></script>

@@ -2,6 +2,7 @@
     background: url(../assets/bg1X2.png);
     margin: 40px 0;
     padding: 40px 0;
+    
 }
 
 .skills-container {
@@ -10,7 +11,7 @@
     // grid-template-rows: 30px 30px;
     // grid-auto-flow: row;
     text-align: center;
-    height: 80vh;
+    min-height: 90vh;
     li i,
     li .iconify {
         font-size: 5rem;

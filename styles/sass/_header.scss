@@ -1,15 +1,16 @@
 header {
     text-align: center;
-    background: url(../assets/bg1X2b.png);
+    background: url(../assets/bg1X2b2.png);
     background-position: bottom;
-    height: 100vh;
+    background-repeat: no-repeat;
+    min-height: 100vh; //change on media query to prevent white space on top
+    position: relative;
 }
-
-.header-overlay {
-    background: url(../assets/Watermarkbg1X3.png);
-    background-position: bottom;
-    height: 90vh;
-}
+// .header-overlay {
+//     // background: url(../assets/Watermarkbg1X3.png);
+//     background-position: bottom;
+//     min-height: 90vh;
+// }
 
 h1 {
     margin-top: 0;
@@ -30,6 +31,7 @@ h2 {
 
 
 .header-nav {
+    margin-top: 0;
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -56,4 +58,41 @@ h2 {
     width: 20%;
     border-radius: 50%;
     border: 10px outset #504ACB;
+}
+
+.links-circle {
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba($color: #504ACB, $alpha: 0.5);
+}
+
+.links-circle:hover{
+    background-color: rgba($color: #504ACB, $alpha: 1);
+}
+
+.twitter-circle {
+    width: 9rem;
+    height: 9rem;
+    top: 500px;
+    left: 33%;
+}
+
+.github-circle {
+    width: 11rem;
+    height: 11rem;
+    top: 300px;
+    left: 70%;
+}
+
+.linkedIn-circle {
+    width: 12rem;
+    height: 12rem;
+    top: 210px;
+    left: 20%;
 }
