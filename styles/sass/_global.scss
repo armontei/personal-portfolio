@@ -2,6 +2,12 @@ html {
     background: url(../assets/139991X3.png);
 }
 
+body {
+    font-size: 2rem;
+    font-family: $body;
+    letter-spacing: 1px;
+}
+
 h1,
 h3,
 h4 {
@@ -11,10 +17,6 @@ h4 {
 
 h3 {
     margin-bottom: 50px;
+    padding-top: 60px;
     border-bottom: 2px solid black;
-}
-
-body {
-    font-size: 2rem;
-    font-family: $body;
 }

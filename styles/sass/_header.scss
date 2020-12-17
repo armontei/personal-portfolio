@@ -3,30 +3,20 @@ header {
     background: url(../assets/bg1X2b2.png);
     background-position: bottom;
     background-repeat: no-repeat;
-    min-height: 100vh; //change on media query to prevent white space on top
+     //change on media query to prevent white space on top
     position: relative;
 }
 
-h1 {
-    margin-top: 0;
-    padding-top: 70px;
-    font-size: 6rem;
-    color: white;
+.header-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
 }
-
-h2 {
-    letter-spacing: 2px;
-    font-style: italic;
-    letter-spacing: 3px;
-    font-size: 3rem;
-    font-weight: 700;
-    color: white;
-}
-
 
 .header-nav {
     margin-top: 0;
-    padding-top: 10px;
+    padding: 10px 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -39,61 +29,63 @@ h2 {
     font-family: $heading;
     font-weight: 700;
     padding-right: 10%;
+    background-color: rgba($color: $main, $alpha: 0.8);
     li {
         margin-left: 20px;
-        color: rgba($color: black, $alpha: 0.5);
-        background-color: rgba($color: $main, $alpha: 0.2);
-        border-radius: 50%;
+        letter-spacing: 1.5px;
     }
     li:hover {
-        color: rgba($color: black, $alpha: 0.8);
-        background-color: rgba($color: $main, $alpha: 0.5);
+        border-bottom: 2px solid black;
     }
 }
 
+h1 {
+    font-size: 6rem;
+    color: white;
+    line-height: 0;
+}
+
+h2 {
+    letter-spacing: 2px;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
 .header-avatar {
-    display: inline-block;
-    margin-top: 80px;
-    text-align: center;
+    margin: 0 auto;
     opacity: 0.9;
     width: 20%;
     border-radius: 50%;
     border: 10px outset $main;
 }
 
-// .links-circle {
-//     border-radius: 50%;
-//     background-color: white;
-//     position: absolute;
-//     font-size: 3.5rem;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     color: white;
-//     background-color: rgba($color: $main, $alpha: 0.5);
-// }
+.down-btn {
+    font-size: 10rem;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    opacity: 0.7;
+    border: none;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
 
-// .links-circle:hover{
-//     background-color: rgba($color: $main, $alpha: 1);
-// }
+a:focus,
+button:focus {
+    outline: 1px dashed $main;
+}
 
-// .twitter-circle {
-//     width: 9rem;
-//     height: 9rem;
-//     top: 500px;
-//     left: 33%;
-// }
-
-// .github-circle {
-//     width: 11rem;
-//     height: 11rem;
-//     top: 300px;
-//     left: 70%;
-// }
-
-// .linkedIn-circle {
-//     width: 12rem;
-//     height: 12rem;
-//     top: 210px;
-//     left: 20%;
-// }
+@keyframes pulse {
+    0% {
+        transform: translate(0, 0); 
+    }
+    50% {
+        transform: translate(0, 10px); 
+    }
+    100% {
+        transform: translate(0, 0); 
+    } 
+}

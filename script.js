@@ -1,4 +1,37 @@
+// Scroll to section from navigation bar
+const sections = document.querySelectorAll(".header-nav a");
+
+for (const section of sections) {
+    section.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+    const offsetTop = document.querySelector(href).offsetTop;
+
+    scroll({
+        top: offsetTop,
+        behavior: "smooth"
+    });
+}
+
+// Scroll down from header
+const scrollDown = document.getElementById("down-btn");
+scrollDown.addEventListener("click", downHandler);
+
+function downHandler() {
+    const offsetTop = document.getElementById("about").offsetTop;
+
+    scroll({
+        top: offsetTop,
+        behavior: "smooth"
+    });
+}
+
+// Fade-in animation initialize
 AOS.init();
+
 // connect calendly
 // connect medium
 // discord?
@@ -6,37 +39,6 @@ AOS.init();
 // nav fixed
 // contact icons fixed
 // social media links in bubbles inside header
-// bonce in animation
+// bounce in animation
 
-// let skillHover = document.getElementsByClassName("skills-label");
-
-// for (let i = 0; i < skillHover.length; i++) {
-//     skillHover[i].addEventListener("mouseenter", function (event) {
-//         // highlight the mouseenter target
-//         console.log("hover");
-//         event.target.style.opacity = 1;
-
-//     }, false);
-// }
-
-// (function () {
-
-//     let skillHover = document.getElementsByClassName("skills-label");
-
-//     for (let i = 0; i < skillHover.length; i++) {
-
-//         function showLabel(e) {
-//             e.target.style.opacity = 1;
-//         }
-    
-//         function hideLabel(e) {
-//             e.target.style.opacity = 0;
-//         }
-    
-//         skillHover[i].onmouseover = showLabel;
-//         skillHover[i].onmouseleave = hideLabel;
-//     }
-
-
-// })();
 
