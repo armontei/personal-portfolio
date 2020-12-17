@@ -1,3 +1,4 @@
+AOS.init();
 // connect calendly
 // connect medium
 // discord?

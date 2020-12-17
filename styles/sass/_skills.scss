@@ -5,23 +5,52 @@
     
 }
 
+.vertical-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
 .skills-container {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    // grid-template-rows: 30px 30px;
+    grid-template-columns: 20% 20% 20% 20%;
+    // grid-template-rows: 80px 80px 80px;
     // grid-auto-flow: row;
     text-align: center;
-    min-height: 90vh;
+    justify-content: center;
+    min-height: 70vh;
+    li {
+        animation: tada 1s linear;
+        animation-play-state: paused;
+    }
+    li:hover {
+        animation-play-state: running;
+    }
     li i,
     li .iconify {
         font-size: 5rem;
     }
+    li p {
+        padding-top: 15px;
+    }
 }
 
-.skills-label {
-    opacity: 0;
-}
 
-.skills-label:hover {
-    opacity: 1;
+@keyframes tada {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(0.9) rotate(-3deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(3deg);
+    }
+    80% {
+        transform: scale(0.9) rotate(-3deg);
+    }
+    100% {
+        transform: scale(1) rotate(0);
+    }
 }

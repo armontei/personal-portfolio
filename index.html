@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amanda Monteiro | Web Developer</title>
+    <title>Amanda Monteiro | Developer</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,51 +27,53 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <!-- HEADER -->
     <header id="home">
-        <!-- <div class="header-overlay"> -->
-            <div class="wrapper">
-                <!-- Navigation -->
-                <nav>
-                    <ul class="header-nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-        
-                <h1>Amanda Monteiro</h1>
-                <h2>Front-End Web Developer</h2>
+        <div class="wrapper">
+            <!-- Navigation -->
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <h1>Amanda Monteiro</h1>
+            <h2>Front-End Web Developer</h2>
 
-                <!-- Header profile picture -->
-                <img class="header-avatar" src="./assets/IMG_20201015_145055_786.jpg" alt="">
+            <!-- Header profile picture -->
+            <img class="header-avatar" src="./assets/IMG_20201015_145055_786.jpg" alt="" >
 
-                <a href="https://twitter.com/amandamcodes" aria-label="Twitter">
-                    <div class="links-circle twitter-circle">
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                </a>
+            <!-- Header social links -->
+            <!-- <a href="https://twitter.com/amandamcodes" aria-label="Twitter" target="_blank">
+                <div class="links-circle twitter-circle">
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </a>
 
-                <a href="https://github.com/armontei" aria-label="GitHub">
-                    <div class="links-circle github-circle">
-                        <i class="fab fa-github"></i>
-                    </div>
-                </a>
+            <a href="https://github.com/armontei" aria-label="GitHub" target="_blank">
+                <div class="links-circle github-circle">
+                    <i class="fab fa-github"></i>
+                </div>
+            </a>
 
-                <a href="https://www.linkedin.com/in/amandamonteiro-3/" aria-label="LinkedIn">
-                    <div class="links-circle linkedIn-circle">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                </a>
+            <a href="https://www.linkedin.com/in/amandamonteiro-3/" aria-label="LinkedIn" target="_blank">
+                <div class="links-circle linkedIn-circle">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </a> -->
 
-            </div> <!-- wrapper div -->
-        <!-- </div> header-overlay div -->
+        </div> <!-- wrapper div -->
     </header>
 
     <!-- MAIN CONTENT -->
@@ -92,7 +94,7 @@
         <!-- Skills section -->
         <section id="skills" class="skills-bkgd">
 
-            <div class="wrapper">
+            <div class="wrapper vertical-align">
 
                 <h3>Skills I've Learned So Far</h3>
                 
@@ -122,8 +124,8 @@
                         <p class="skills-label">jQuery</p>
                     </li>
                     <li>
-                        <span class="iconify" data-icon="mdi:api" data-inline="false"></span>
-                        <p class="skills-label">RESTful API</p>
+                        <i class="fas fa-cogs"></i>
+                        <p class="skills-label">Rest API</p>
                     </li>
                     <li>
                         <i class="devicon-react-original colored"></i>
@@ -145,7 +147,6 @@
                         <i class="fab fa-github"></i>
                         <p class="skills-label">GitHub</p>
                     </li>
-                    <!-- <li><i class="devicon-trello-plain colored"></i></li> -->
                 </ul>
             </div>           
         </section>
@@ -154,10 +155,9 @@
         <section id="projects" class="projects-bkgd">
             <div class="wrapper">
 
-                <h3>Projects I've Enjoyed Making</h3>
+                <h3>Projects I'm Proud of</h3>
     
-                <div class="projects-flex">
-                                 
+                <div class="projects-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="easeInCubic">
                     <div>
                         <h4>I Dream of Cleannie</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in accusamus amet eos doloribus, dolorem aliquid facilis nisi consequatur itaque.</p>
@@ -169,20 +169,19 @@
                     <img src="./assets/cleannie.png" alt="">
                 </div>
 
-                <div class="projects-flex">
+                <div class="projects-flex" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="easeInCubic">
                     <img src="./assets/recipes.png" alt="">
                     <div>
                         <h4>Worldly recipes</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in accusamus amet eos doloribus, dolorem aliquid facilis nisi consequatur itaque.</p>
-                        <p>HTML | SCSS | JavaScript | jQuery | RESTful API</p>
+                        <p>HTML | SCSS | JavaScript | jQuery | RESTful API | Pair Programming</p>
                         <a href="https://armontei.github.io/amanda-monteiro-project-3/">Live Site</a>
                         <a href="https://github.com/armontei/amanda-monteiro-project-3">View Code</a>
                     </div>
                     
                 </div>
 
-                <div class="projects-flex">
-                    
+                <div class="projects-flex" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="easeInCubic">                   
                     <div>
                         <h4>A Moment of Calm</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in accusamus amet eos doloribus, dolorem
@@ -194,7 +193,7 @@
                     <img src="./assets/calm.png" alt="">
                 </div>
 
-                <div class="projects-flex">
+                <div class="projects-flex" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="easeInCubic">
                     <img src="./assets/restaurant.png" alt="">
                     <div>
                         <h4>The Restaurant Mall</h4>
@@ -228,13 +227,17 @@
                 </form>
             </div>
         </section>
-
-        <script src="./script.js"></script>
     </main>
 
     <!-- FOOTER -->
     <footer>
         Built by Amanda Monteiro
     </footer>
+
+    <!-- Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
 </body>
 </html>
