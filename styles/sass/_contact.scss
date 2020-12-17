@@ -1,52 +1,63 @@
 .contact-bkgd {
-    min-height: 100vh;
     background: url(../assets/bg1X8.png);
     background-repeat: no-repeat;
     background-position: right;
     img {
-        width: 30%;
+        width: 300px;
+    }
+    div h3 {
+        padding-top: 60px;
     }
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 12rem 12rem;
+    align-items: center;
+    justify-items: center;
 }
 
 .links-circle {
     border-radius: 50%;
     background-color: white;
-    // position: absolute;
     font-size: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     background-color: rgba($color: $main, $alpha: 0.5);
+    width: 9rem;
+    height: 9rem;
 }
 
 .links-circle:hover{
     background-color: rgba($color: $main, $alpha: 1);
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
-.twitter-circle {
-    width: 9rem;
-    height: 9rem;
-    top: 500px;
-    left: 33%;
+.contact-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    min-height: 80vh;
 }
 
-.github-circle {
-    width: 11rem;
-    height: 11rem;
-    top: 300px;
-    left: 70%;
+.form-container {
+    width: 50%;
 }
 
-.linkedIn-circle {
-    width: 12rem;
-    height: 12rem;
-    top: 210px;
-    left: 20%;
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
