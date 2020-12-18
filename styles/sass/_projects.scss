@@ -8,6 +8,7 @@
     .content-box:nth-of-type(odd) {
         box-shadow: -10px 10px rgba($color: $main, $alpha: 0.5);
     }
+    overflow: hidden;
 }
 
 .projects-flex {
@@ -19,6 +20,7 @@
         padding: 0 10px
     }
     img {
+        object-fit: contain;
         width: 50%;
     }
     div {

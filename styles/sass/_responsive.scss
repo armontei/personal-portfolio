@@ -1,0 +1,88 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .about-container,
+    .projects-flex:nth-of-type(even) {
+        flex-direction: column;
+    }
+
+    .about-container img {
+        width: 60vw;
+        height: 60vw;
+        margin-bottom: 30px;
+    }
+
+    .projects-flex:nth-of-type(odd) {
+        flex-direction: column-reverse;
+    }
+    .projects-flex img {
+        width: 100%;
+    }
+    .projects-flex span {
+        text-align: center;
+    }
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    h1 {
+        line-height: 65px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-flex{
+        flex-direction: row;
+    }
+
+    .contact-flex,
+    .form-container {
+        width: 100%;
+    }
+
+    .content-box {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .form-container {
+        margin: 0 auto;
+        p:nth-of-type(3) {
+            text-align: center;
+        }
+    }
+    
+}
+
+/* Landscape phones and down */
+@media (max-width: 550px) {
+
+    .skills-container {
+        grid-template-columns: 50% 50%;
+        li {
+            margin-bottom: 35px;
+        }
+        li p {
+            padding-top: 5px;
+        }
+    }
+
+    .projects-bkgd div h3 {
+        padding-top: 0;
+    }
+
+    .contact-flex {
+        flex-direction: column;
+    }
+
+}

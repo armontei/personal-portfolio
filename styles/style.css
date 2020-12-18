@@ -593,6 +593,7 @@ h4 {
   min-height: 90vh;
   background: url(../assets/139991X3.png);
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .projects-bkgd div h3 {
@@ -618,6 +619,8 @@ h4 {
 }
 
 .projects-flex img {
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 50%;
 }
 
@@ -670,6 +673,18 @@ h4 {
 
 .contact-bkgd div h3 {
   padding-top: 30px;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../assets/heading1X.png);
+  background-repeat: no-repeat;
+}
+
+.contact-container a:focus {
+  outline: 1px dashed #664acb;
 }
 
 form {
@@ -778,22 +793,100 @@ textarea:focus {
   background-color: rgba(102, 74, 203, 0.2);
 }
 
-.contact-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: url(../assets/heading@1X.png);
-  background-repeat: no-repeat;
-}
-
-.contact-container a:focus {
-  outline: 1px dashed #664acb;
-}
-
 footer {
   text-align: center;
   background-color: #664acb;
   color: white;
   font-family: "Bungee", cursive;
   padding: 15px;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .about-container,
+  .projects-flex:nth-of-type(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-container img {
+    width: 60vw;
+    height: 60vw;
+    margin-bottom: 30px;
+  }
+  .projects-flex:nth-of-type(odd) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .projects-flex img {
+    width: 100%;
+  }
+  .projects-flex span {
+    text-align: center;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  h1 {
+    line-height: 65px;
+  }
+  .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact-flex,
+  .form-container {
+    width: 100%;
+  }
+  .content-box {
+    padding: 15px;
+    text-align: left;
+  }
+  .form-container {
+    margin: 0 auto;
+  }
+  .form-container p:nth-of-type(3) {
+    text-align: center;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 550px) {
+  .skills-container {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .skills-container li {
+    margin-bottom: 35px;
+  }
+  .skills-container li p {
+    padding-top: 5px;
+  }
+  .projects-bkgd div h3 {
+    padding-top: 0;
+  }
+  .contact-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }

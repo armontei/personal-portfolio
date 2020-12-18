@@ -152,7 +152,7 @@
 
                     <div>
                         <h4>I Dream of Cleannie</h4>
-                        <p>My first React app built within a week! Add cleaning tasks according to room and check them off when complete. Click a button to get a random task suggestion.</p>
+                        <p>My first React app! Built within a week. Add cleaning tasks according to room and mark when complete. You can also get a random task suggestion.</p>
                         <p>HTML | SCSS | JavaScript | React | Firebase</p>
 
                         <span>
@@ -168,7 +168,7 @@
                     <img src="./assets/recipes.png" alt="">
                     <div>
                         <h4>Worldly recipes</h4>
-                        <p>Type a food item to see a list of recipes with that in the title. Filter recipes by their country of origin.</p>
+                        <p>Type a food item to see a list of recipes with that item in the title. Filter recipes by their country of origin.</p>
                         <p>HTML | SCSS | jQuery | Rest API | Pair Programming</p>
 
                         <span>
@@ -182,7 +182,7 @@
                 <div class="projects-flex content-box" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="easeInCubic">                   
                     <div>
                         <h4>A Moment of Calm</h4>
-                        <p>Change the background theme, select your preferred audio, and set a timer to meditate. Or have them randomly chosen for you. There's also a visualizer animation to help focus your breathing.</p>
+                        <p>Change the background theme, select your preferred audio, and set a timer to meditate. Or have them randomly chosen for you. There's also a visualizer animation to help you focus your breathing.</p>
                         <p>HTML | SCSS | JavaScript | jQuery</p>
 
                         <span>
@@ -258,17 +258,17 @@
 
                         <p>I can also be reached directly at <span><a href="mailto:a3monteiro@gmail.com">a3monteiro@gmail.com <i class="far fa-envelope"></i></a></span></p>
         
-                        <form action="https://formspree.io/f/xaylprdz" method="POST">
+                        <form name="contact" method="POST" data-netlify="true">
                             <label for="userName">Name:</label>
                             <input type="text" id="userName" placeholder="Namie Namerson" name="name" >
                         
                             <label for="userEmail">Email:</label>
-                            <input type="email" id="userEmail" name="_replyto" placeholder="ilikecats@example.com">
+                            <input type="email" id="userEmail" name="email" placeholder="ilikecats@example.com">
                             
                             <label for="userMessage">Message:</label>
-                            <textarea type="text" id="userMessage" placeholder="Type your heart's content here, don't forget to hit send! "></textarea>
+                            <textarea type="text" id="userMessage" placeholder="Type your heart's content here, don't forget to hit send!" name="message"></textarea>
                         
-                            <input type="submit" value="Send" class="btn" name="message">
+                            <input type="submit" value="Send" class="btn" >
                         </form>
                     </div>
                     

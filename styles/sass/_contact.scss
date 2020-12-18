@@ -13,6 +13,15 @@
     }
 }
 
+.contact-container {
+    display: flex;
+    background: url(../assets/heading1X.png);
+    background-repeat: no-repeat;
+    a:focus {
+        outline: 1px dashed $main;
+    }
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -90,11 +99,3 @@ textarea:focus {
     background-color: rgba($color: $main, $alpha: 0.2);
 }
 
-.contact-container {
-    display: flex;
-    background: url(../assets/heading@1X.png);
-    background-repeat: no-repeat;
-    a:focus {
-        outline: 1px dashed $main;
-    }
-}
