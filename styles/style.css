@@ -648,6 +648,10 @@ h4 {
   font-weight: bold;
 }
 
+.projects-flex a {
+  width: 14rem;
+}
+
 .code-btn {
   background-color: transparent;
   color: #664acb;
@@ -777,6 +781,10 @@ form {
   border-bottom: 1px dashed black;
 }
 
+.form-container a:hover {
+  background-color: rgba(102, 74, 203, 0.4);
+}
+
 form {
   color: #664acb;
 }
@@ -903,7 +911,7 @@ footer {
     width: 100%;
   }
   .content-box {
-    padding: 10px;
+    padding: 10px 5px;
     text-align: left;
   }
   .form-container {
@@ -931,6 +939,9 @@ footer {
   }
   .projects-bkgd div h3 {
     padding-top: 0;
+  }
+  .projects-flex {
+    margin: 30px 5px;
   }
   .contact-flex {
     -webkit-box-orient: vertical;

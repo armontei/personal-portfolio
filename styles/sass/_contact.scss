@@ -76,6 +76,9 @@ form {
         font-weight: bold;
         border-bottom: 1px dashed black;
     }
+    a:hover {
+        background-color: rgba($color: $main, $alpha: 0.4);
+    }
 }
 
 form {
