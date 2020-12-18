@@ -1,12 +1,15 @@
 .contact-bkgd {
+    margin: 40px 0;
+    padding: 40px 0;
     background: url(../assets/bg1X8.png);
     background-repeat: no-repeat;
     background-position: right;
+    background-attachment: fixed;
     img {
         width: 300px;
     }
     div h3 {
-        padding-top: 60px;
+        padding-top: 30px;
     }
 }
 
@@ -25,7 +28,6 @@ form {
 
 .links-circle {
     border-radius: 50%;
-    background-color: white;
     font-size: 3.5rem;
     display: flex;
     align-items: center;
@@ -34,6 +36,7 @@ form {
     background-color: rgba($color: $main, $alpha: 0.5);
     width: 9rem;
     height: 9rem;
+    box-shadow: 2px 2px 5px black;
 }
 
 .links-circle:hover{
@@ -45,19 +48,53 @@ form {
 .contact-flex {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    width: 50%;
-    min-height: 80vh;
+    justify-content: space-around;
+    width: 40%;
 }
 
 .form-container {
-    width: 50%;
+    width: 60%;
+    margin: 0 30px;
+    p {
+        padding-bottom: 25px;
+    }
+    p:first-of-type {
+        text-align: center;
+        font-weight: bold;
+    }
+    span {
+        font-weight: bold;
+        border-bottom: 1px dashed black;
+    }
+}
+
+form {
+    color: $main;
+}
+
+
+input[type=text],
+input[type=email],
+textarea {
+    padding: 10px;
+    caret-color: rgba($color: $main, $alpha: 0.6);
+    margin-bottom: 10px;
+    border: 0.7px solid $main;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    outline: none;
+    background-color: rgba($color: $main, $alpha: 0.2);
 }
 
 .contact-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    background: url(../assets/heading@1X.png);
+    background-repeat: no-repeat;
+    a:focus {
+        outline: 1px dashed $main;
+    }
 }

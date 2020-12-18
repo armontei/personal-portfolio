@@ -58,12 +58,5 @@ function downHandler() {
 AOS.init();
 
 // connect calendly
-// connect medium
-// discord?
-// website images inside screen
-// nav fixed
-// contact icons fixed
-// social media links in bubbles inside header
-// bounce in animation
 
 

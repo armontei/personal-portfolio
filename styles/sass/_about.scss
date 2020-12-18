@@ -1,23 +1,58 @@
 .about-bkgd {
     margin: 40px 0;
     padding: 40px 0;
-    background: url(../assets/Shape21Xa.png);
+    background: url(../assets/Shape21Xb.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .about-container {
     display: flex;
     align-items: center;
-    padding: 15px;
-    min-height: 90vh;
+    min-height: 100vh;
     img {
-        padding: 20px;
+        margin-right: 50px;
         width: 40vw;
         height: 40vw;
         border-radius: 10% 10% 49% 10% / 0% 29% 54% 0% ;
-        margin-right: 30px;
     }
     div {
-        padding-top: 20px;
+        text-align: justify;
+        p {
+            padding-bottom: 20px;
+        }
     }
+}
+
+.content-box {
+    border: 2px solid $main;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: justify;
+    background-color: rgba($color: white, $alpha: 0.7);
+    box-shadow: 10px 10px rgba($color: $main, $alpha: 0.5);
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgba($color: $main, $alpha: 0.9);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+    border: 3px solid rgba($color: $main, $alpha: 0.9);
+}
+
+.btn:visited {
+    color: white;
+}
+
+.btn:focus {
+    outline: 1px dashed $main;
+}
+
+.btn:hover {
+    background-color: rgba($color: $main, $alpha: 1);
+    transition: 0.5s;
+    border-color: black;
 }

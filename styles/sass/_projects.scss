@@ -1,16 +1,49 @@
 .projects-bkgd {
     min-height: 90vh;
     background: url(../assets/139991X3.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
     div h3 {
         padding-top: 60px;
+    }
+    .content-box:nth-of-type(odd) {
+        box-shadow: -10px 10px rgba($color: $main, $alpha: 0.5);
     }
 }
 
 .projects-flex {
     display: flex;
+    border: 3px outset $main;
+    margin: 30px 20px;
+    img,
+    div {
+        padding: 0 10px
+    }
     img {
         width: 50%;
     }
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    p:last-of-type {
+        font-weight: bold;
+    }
+}
+
+.code-btn {
+    background-color: transparent;
+    color:$main;
+}
+
+.code-btn:visited {
+    color:$main;
+}
+
+.code-btn:hover {
+    color: white;
+    background-color: rgba($color: $main, $alpha: 0.9);
 }
