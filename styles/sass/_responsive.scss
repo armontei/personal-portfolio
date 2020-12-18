@@ -37,6 +37,52 @@
         line-height: 65px;
     }
 
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+        label {
+            font-size: 4rem;
+            position: fixed;
+            color: $main;
+            top: 20px;
+            right: 20px;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked + .mobile-nav {
+            right: 0;
+            top: 65px;
+        }
+        z-index: 9999;
+    }
+
+    .mobile-nav {
+        background-color: rgba($color: $main, $alpha: 0.9);
+        position: fixed;
+        right: -50%;
+        width: 50%;
+        top: 65px;
+        transition: 0.2s;
+        a {
+            font-family: $heading;
+            padding: 20px;
+            display: inline-block;
+            border-bottom: 1px solid $main;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+        a:visited {
+            color: white;
+        }
+    }
+
     .contact-container {
         flex-direction: column;
     }
@@ -51,7 +97,7 @@
     }
 
     .content-box {
-        padding: 15px;
+        padding: 10px;
         text-align: left;
     }
 
@@ -66,6 +112,10 @@
 
 /* Landscape phones and down */
 @media (max-width: 550px) {
+
+    .header-avatar {
+        display: none;
+    }
 
     .skills-container {
         grid-template-columns: 50% 50%;

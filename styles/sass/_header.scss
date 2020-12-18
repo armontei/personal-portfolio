@@ -7,6 +7,10 @@ header {
     position: relative;
 }
 
+.mobile-only {
+    display: none;
+}
+
 .header-align {
     display: flex;
     flex-direction: column;

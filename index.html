@@ -37,9 +37,24 @@
     <!-- HEADER -->
     <header id="home">
         <div class="wrapper header-align">
+
             <!-- Navigation -->
-            <nav>
+            <nav class="desktop-only">
                 <ul class="header-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- mobile top navigation -->
+            <nav class="mobile-only">
+                <label class="sr-only">Menu</label>
+                <label for="toggle"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="toggle" />
+            
+                <ul class="mobile-nav">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>

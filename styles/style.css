@@ -298,6 +298,10 @@ header {
   position: relative;
 }
 
+.mobile-only {
+  display: none;
+}
+
 .header-align {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -840,6 +844,48 @@ footer {
   h1 {
     line-height: 65px;
   }
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+    z-index: 9999;
+  }
+  .mobile-only label {
+    font-size: 4rem;
+    position: fixed;
+    color: #664acb;
+    top: 20px;
+    right: 20px;
+  }
+  .mobile-only input[type="checkbox"] {
+    display: none;
+  }
+  .mobile-only input[type="checkbox"]:checked + .mobile-nav {
+    right: 0;
+    top: 65px;
+  }
+  .mobile-nav {
+    background-color: rgba(102, 74, 203, 0.9);
+    position: fixed;
+    right: -50%;
+    width: 50%;
+    top: 65px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .mobile-nav a {
+    font-family: "Bungee", cursive;
+    padding: 20px;
+    display: inline-block;
+    border-bottom: 1px solid #664acb;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  .mobile-nav a:visited {
+    color: white;
+  }
   .contact-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -857,7 +903,7 @@ footer {
     width: 100%;
   }
   .content-box {
-    padding: 15px;
+    padding: 10px;
     text-align: left;
   }
   .form-container {
@@ -870,6 +916,9 @@ footer {
 
 /* Landscape phones and down */
 @media (max-width: 550px) {
+  .header-avatar {
+    display: none;
+  }
   .skills-container {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
