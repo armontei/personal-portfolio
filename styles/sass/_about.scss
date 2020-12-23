@@ -12,8 +12,8 @@
     min-height: 100vh;
     img {
         margin-right: 50px;
-        width: 40vw;
-        height: 40vw;
+        width: 550px;
+        height: 550px;
         border-radius: 10% 10% 49% 10% / 0% 29% 54% 0% ;
     }
     div {
@@ -28,15 +28,15 @@
     border: 2px solid $main;
     padding: 50px;
     border-radius: 20px;
-    text-align: justify;
     background-color: rgba($color: white, $alpha: 0.7);
     box-shadow: 10px 10px rgba($color: $main, $alpha: 0.5);
 }
 
 .btn {
+    text-align: center;
     display: inline-block;
     background-color: rgba($color: $main, $alpha: 0.9);
-    padding: 15px;
+    padding: 3px 15px;
     border-radius: 5px;
     margin-top: 20px;
     color: white;

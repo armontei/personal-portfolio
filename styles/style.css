@@ -356,6 +356,7 @@ header {
 }
 
 h1 {
+  padding-top: 50px;
   font-size: 7rem;
   color: white;
   line-height: 0;
@@ -450,8 +451,8 @@ h2 {
 
 .about-container img {
   margin-right: 50px;
-  width: 40vw;
-  height: 40vw;
+  width: 550px;
+  height: 550px;
   border-radius: 10% 10% 49% 10% / 0% 29% 54% 0%;
 }
 
@@ -467,16 +468,16 @@ h2 {
   border: 2px solid #664acb;
   padding: 50px;
   border-radius: 20px;
-  text-align: justify;
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-box-shadow: 10px 10px rgba(102, 74, 203, 0.5);
           box-shadow: 10px 10px rgba(102, 74, 203, 0.5);
 }
 
 .btn {
+  text-align: center;
   display: inline-block;
   background-color: rgba(102, 74, 203, 0.9);
-  padding: 15px;
+  padding: 3px 15px;
   border-radius: 5px;
   margin-top: 20px;
   color: white;
@@ -519,7 +520,6 @@ h4 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  min-height: 100vh;
 }
 
 .skills-container {
@@ -531,7 +531,6 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 70vh;
 }
 
 .skills-container li {
@@ -539,6 +538,7 @@ h4 {
           animation: shake 0.7s linear;
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
+  margin: 20px;
 }
 
 .skills-container li:hover {
@@ -552,7 +552,7 @@ h4 {
 }
 
 .skills-container li p {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 @-webkit-keyframes shake {
@@ -862,25 +862,28 @@ footer {
   .mobile-only label {
     font-size: 4rem;
     position: fixed;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     color: #664acb;
     top: 20px;
     right: 20px;
+    z-index: 9999999;
   }
   .mobile-only input[type="checkbox"] {
     display: none;
   }
   .mobile-only input[type="checkbox"]:checked + .mobile-nav {
     right: 0;
-    top: 65px;
+    top: 0;
   }
   .mobile-nav {
     background-color: rgba(102, 74, 203, 0.9);
     position: fixed;
-    right: -50%;
-    width: 50%;
-    top: 65px;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .mobile-nav a {
     font-family: "Bungee", cursive;
@@ -911,7 +914,7 @@ footer {
     width: 100%;
   }
   .content-box {
-    padding: 10px 5px;
+    padding: 10px;
     text-align: left;
   }
   .form-container {
