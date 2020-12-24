@@ -55,7 +55,8 @@
 }
 
 .btn:hover {
-    background-color: rgba($color: $main, $alpha: 1);
+    background-color: $main;
     transition: 0.5s;
-    border-color: black;
+    border-color:white;
+    outline: 3px solid $main;
 }

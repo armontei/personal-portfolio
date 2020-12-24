@@ -1,5 +1,25 @@
 *{padding: 0; margin: 0;}html{font-size: 62.5%;}.wrapper{max-width: 1280px; width: 95%; margin: 0 auto;}ul{list-style: none;}a{text-decoration: none; color: inherit}a:visited{color: inherit}img {width: 100%; height: auto; display: block;}
 
+html {
+    // FIREFOX
+    scrollbar-color: rgba($color: $main, $alpha: 0.8) rgba($color: $main, $alpha: 0.5);
+
+    // CHROME
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+    ::-webkit-scrollbar-track {
+        background: rgba($color: $main, $alpha: 0.5);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgba($color: $main, $alpha: 0.8);
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: $main;
+    } 
+}
+
 body {
     font-size: 2rem;
     font-family: $body;
