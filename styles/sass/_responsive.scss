@@ -46,8 +46,7 @@
         label {
             font-size: 4rem;
             position: fixed;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-            color: $main;
+            color: rgba($color: black, $alpha: 0.8);
             top: 20px;
             right: 20px;
             z-index: 9999999;
@@ -60,7 +59,6 @@
         input[type="checkbox"]:checked + .mobile-nav {
             right: 0;
             top: 0;
-            // top: 65px;
         }
         z-index: 9999;
     }
@@ -72,8 +70,10 @@
         width: 100%;
         height: 100%;
         top: 0;
-        // top: 65px;
         transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         a {
             font-family: $heading;
             padding: 20px;
@@ -82,10 +82,15 @@
             width: 100%;
             text-align: center;
             color: white;
+            text-shadow: 1px 1px 1px black;
         }
         a:visited {
             color: white;
         }
+    }
+
+    .skills-container {
+        grid-template-columns: 50% 50%;
     }
 
     .contact-container {
@@ -122,16 +127,6 @@
         display: none;
     }
 
-    .skills-container {
-        grid-template-columns: 50% 50%;
-        li {
-            margin-bottom: 35px;
-        }
-        li p {
-            padding-top: 5px;
-        }
-    }
-
     .projects-bkgd div h3 {
         padding-top: 0;
     }
@@ -140,8 +135,21 @@
         margin: 30px 5px;
     }
 
-    .contact-flex {
-        flex-direction: column;
+    // .contact-flex {
+    //     flex-direction: column;
+    // }
+    .contact-bkgd img {
+        width: 50%;
+    }
+
+    .social-links{
+        grid-template-columns: 50% 50%;
+        width: 50%;
+    }
+
+    .links-circle {
+        width: 7.5rem;
+        height: 7.5rem;
     }
 
 }

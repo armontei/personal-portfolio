@@ -7,6 +7,9 @@ h4 {
     background: url(../assets/bg1X2.png);
     margin: 40px 0;
     padding: 40px 0;
+    h3 {
+        margin-top: 30px;
+    }
 }
 
 .vertical-align {
@@ -23,7 +26,7 @@ h4 {
     li {
         animation: shake 0.7s linear;
         animation-play-state: paused;
-        margin: 20px;
+        margin: 30px;
     }
     li:hover {
         animation-play-state: running;

@@ -17,9 +17,11 @@
         border-radius: 10% 10% 49% 10% / 0% 29% 54% 0% ;
     }
     div {
-        text-align: justify;
         p {
             padding-bottom: 20px;
+        }
+        .btn {
+            width: 25rem;
         }
     }
 }
@@ -34,13 +36,14 @@
 
 .btn {
     text-align: center;
-    display: inline-block;
+    display: block;
     background-color: rgba($color: $main, $alpha: 0.9);
-    padding: 3px 15px;
+    padding: 10px 15px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin: 20px auto;
     color: white;
     border: 3px solid rgba($color: $main, $alpha: 0.9);
+    text-align: center;
 }
 
 .btn:visited {
