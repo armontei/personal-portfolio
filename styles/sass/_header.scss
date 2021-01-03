@@ -7,10 +7,6 @@ header {
     position: relative;
 }
 
-.mobile-only {
-    display: none;
-}
-
 .header-align {
     display: flex;
     flex-direction: column;
@@ -22,18 +18,27 @@ header {
     margin-top: 0;
     padding: 10px 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 5;
     width: 100%;
     height: 50px;
-    font-family: $heading;
     font-weight: 700;
-    padding-right: 10%;
     background-color: rgba($color: $main, $alpha: 0.8);
+}
+
+.logo {
+    color: white;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    font-family: $heading;
+    display: flex;
+    align-items: center;
     li {
         margin-left: 20px;
         letter-spacing: 1.5px;
@@ -47,6 +52,18 @@ header {
         color: white;
     }
 }
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu div {
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
 
 h1 {
     padding-top: 50px;

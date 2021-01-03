@@ -1,6 +1,8 @@
 *{padding: 0; margin: 0;}html{font-size: 62.5%;}.wrapper{max-width: 1280px; width: 95%; margin: 0 auto;}ul{list-style: none;}a{text-decoration: none; color: inherit}a:visited{color: inherit}img {width: 100%; height: auto; display: block;}
 
 html {
+    // scroll-behavior: smooth;
+
     // FIREFOX
     scrollbar-color: rgba($color: $main, $alpha: 0.8) rgba($color: $main, $alpha: 0.5);
 

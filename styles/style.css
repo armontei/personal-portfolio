@@ -319,10 +319,6 @@ header {
   position: relative;
 }
 
-.mobile-only {
-  display: none;
-}
-
 .header-align {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,37 +339,62 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 5;
   width: 100%;
   height: 50px;
-  font-family: "Bungee", cursive;
   font-weight: 700;
-  padding-right: 10%;
   background-color: rgba(102, 74, 203, 0.8);
 }
 
-.header-nav li {
+.logo {
+  color: white;
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  font-family: "Bungee", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-links li {
   margin-left: 20px;
   letter-spacing: 1.5px;
 }
 
-.header-nav li:hover {
+.nav-links li:hover {
   border-bottom: 2px solid black;
   padding-top: 8px;
 }
 
-.header-nav li a:focus {
+.nav-links li a:focus {
   outline: none;
   color: white;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu div {
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 h1 {
@@ -890,37 +911,31 @@ footer {
   h1 {
     line-height: 65px;
   }
-  .desktop-only {
-    display: none;
+  .header-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .mobile-only {
+  .logo {
+    padding-left: 30px;
+  }
+  .mobile-menu {
     display: block;
-    z-index: 9999;
+    z-index: 10;
+    padding-right: 30px;
   }
-  .mobile-only label {
-    font-size: 4rem;
-    position: fixed;
-    color: rgba(0, 0, 0, 0.8);
-    top: 20px;
-    right: 20px;
-    z-index: 9999999;
-  }
-  .mobile-only input[type="checkbox"] {
-    display: none;
-  }
-  .mobile-only input[type="checkbox"]:checked + .mobile-nav {
-    right: 0;
-    top: 0;
-  }
-  .mobile-nav {
+  .nav-links {
     background-color: rgba(102, 74, 203, 0.9);
     position: fixed;
-    right: -100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     width: 100%;
     height: 100%;
     top: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -928,22 +943,41 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .mobile-nav a {
-    font-family: "Bungee", cursive;
-    padding: 20px;
-    display: inline-block;
-    border-bottom: 1px solid #664acb;
+  .nav-links li {
+    margin: 20px 0;
     width: 100%;
-    text-align: center;
     color: white;
     text-shadow: 1px 1px 1px black;
   }
-  .mobile-nav a:visited {
-    color: white;
+  .nav-links li:hover {
+    border-bottom: none;
+    padding: 0;
+  }
+  .nav-open {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .mobile-menu {
+    -webkit-transition: all 3s ease-in;
+    transition: all 3s ease-in;
+  }
+  .close .line1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+            transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .close .line2 {
+    opacity: 0;
+  }
+  .close .line3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+            transform: rotate(45deg) translate(-5px, -6px);
   }
   .skills-container {
     -ms-grid-columns: 50% 50%;

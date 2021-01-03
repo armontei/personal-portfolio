@@ -1,5 +1,5 @@
 // Scroll to section from navigation bar
-const sections = document.querySelectorAll(".header-nav a");
+const sections = document.querySelectorAll(".nav-links a");
 
 for (const section of sections) {
     section.addEventListener("click", clickHandler);
@@ -28,6 +28,18 @@ function downHandler() {
         behavior: "smooth"
     });
 }
+
+// Mobile navigation slider
+const menu = document.querySelector('.mobile-menu');
+const nav = document.querySelector('.nav-links');
+const menuIcon = document.querySelector('.mobile-menu');
+
+function navSlide() {
+    nav.classList.toggle('nav-open');
+    menuIcon.classList.toggle('close');
+}
+
+menu.addEventListener('click', navSlide);
 
 // var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
 // var rootElement = document.documentElement
