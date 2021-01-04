@@ -13,7 +13,7 @@ function clickHandler(e) {
         behavior: "smooth"
     });
 
-    nav.classList.toggle('nav-open');
+    navSlide();
 }
 
 // Smooth scroll down from header

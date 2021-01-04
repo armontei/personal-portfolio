@@ -874,7 +874,7 @@ footer {
 }
 
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+@media (max-width: 990px) {
   h1 {
     font-size: 5rem;
   }
@@ -891,7 +891,7 @@ footer {
   .about-container img {
     width: 60vw;
     height: 60vw;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
   }
   .projects-flex:nth-of-type(odd) {
     -webkit-box-orient: vertical;
@@ -1015,8 +1015,12 @@ footer {
 
 /* Landscape phones and down */
 @media (max-width: 550px) {
-  .projects-bkgd div h3 {
-    padding-top: 0;
+  .header-avatar {
+    width: 200px;
+  }
+  .about-container img {
+    width: 80vw;
+    height: 80vw;
   }
   .projects-flex {
     margin: 30px 5px;
