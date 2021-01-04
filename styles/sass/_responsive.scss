@@ -68,6 +68,7 @@
             width: 100%;
             color: white;
             text-shadow: 1px 1px 1px black;
+            font-size: 2.5rem;
         }
         li:hover{
             border-bottom: none;
@@ -129,10 +130,6 @@
 /* Landscape phones and down */
 @media (max-width: 550px) {
 
-    .header-avatar {
-        display: none;
-    }
-
     .projects-bkgd div h3 {
         padding-top: 0;
     }
@@ -141,9 +138,6 @@
         margin: 30px 5px;
     }
 
-    // .contact-flex {
-    //     flex-direction: column;
-    // }
     .contact-bkgd img {
         width: 50%;
     }

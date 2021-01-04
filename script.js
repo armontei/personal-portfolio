@@ -1,9 +1,7 @@
-// Scroll to section from navigation bar
+// Smooth scroll to section from navigation bar
 const sections = document.querySelectorAll(".nav-links a");
 
-for (const section of sections) {
-    section.addEventListener("click", clickHandler);
-}
+sections.forEach(section => section.addEventListener("click", clickHandler));
 
 function clickHandler(e) {
     e.preventDefault();
@@ -14,9 +12,11 @@ function clickHandler(e) {
         top: offsetTop,
         behavior: "smooth"
     });
+
+    nav.classList.toggle('nav-open');
 }
 
-// Scroll down from header
+// Smooth scroll down from header
 const scrollDown = document.getElementById("down-btn");
 scrollDown.addEventListener("click", downHandler);
 

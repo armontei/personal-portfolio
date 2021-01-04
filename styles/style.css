@@ -355,7 +355,7 @@ header {
 }
 
 .logo {
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   letter-spacing: 3px;
 }
 
@@ -398,7 +398,7 @@ header {
 }
 
 h1 {
-  padding-top: 50px;
+  padding-top: 40px;
   font-size: 7rem;
   color: white;
   line-height: 0;
@@ -413,6 +413,7 @@ h2 {
   font-weight: 700;
   color: white;
   text-shadow: 3px 3px 5px #664acb;
+  padding-bottom: 10px;
 }
 
 .header-avatar {
@@ -955,6 +956,7 @@ footer {
     width: 100%;
     color: white;
     text-shadow: 1px 1px 1px black;
+    font-size: 2.5rem;
   }
   .nav-links li:hover {
     border-bottom: none;
@@ -1013,9 +1015,6 @@ footer {
 
 /* Landscape phones and down */
 @media (max-width: 550px) {
-  .header-avatar {
-    display: none;
-  }
   .projects-bkgd div h3 {
     padding-top: 0;
   }
