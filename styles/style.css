@@ -501,6 +501,10 @@ h2 {
   border-radius: 10% 10% 49% 10% / 0% 29% 54% 0%;
 }
 
+.about-container div h3 {
+  margin-bottom: 30px;
+}
+
 .about-container div p {
   padding-bottom: 20px;
 }
