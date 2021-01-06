@@ -8,6 +8,17 @@
         font-size: 3rem;
     }
 
+    .btn:hover {
+        background-color: $main;
+        border-color:$main;
+        outline: none;
+    }
+
+    .links-circle:hover{
+        background-color: rgba($color: $main, $alpha: 1);
+        transform: scale(1);
+    }
+
     .about-container,
     .projects-flex:nth-of-type(even) {
         flex-direction: column;

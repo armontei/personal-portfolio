@@ -664,6 +664,18 @@ h4 {
           box-shadow: -10px 10px rgba(102, 74, 203, 0.5);
 }
 
+.directoryLink {
+  font-weight: bold;
+}
+
+.directoryLink a {
+  border-bottom: 1px dashed black;
+}
+
+.directoryLink a:hover {
+  background-color: rgba(102, 74, 203, 0.4);
+}
+
 .projects-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -884,6 +896,16 @@ footer {
   }
   h2 {
     font-size: 3rem;
+  }
+  .btn:hover {
+    background-color: #664acb;
+    border-color: #664acb;
+    outline: none;
+  }
+  .links-circle:hover {
+    background-color: #664acb;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .about-container,
   .projects-flex:nth-of-type(even) {

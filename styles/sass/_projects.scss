@@ -2,13 +2,23 @@
     min-height: 90vh;
     background: url(../assets/139991X3.png);
     background-attachment: fixed;
+    overflow: hidden;
     div h3 {
         padding-top: 60px;
     }
     .content-box:nth-of-type(odd) {
         box-shadow: -10px 10px rgba($color: $main, $alpha: 0.5);
     }
-    overflow: hidden;
+}
+
+.directoryLink {
+    font-weight: bold;
+    a {
+        border-bottom: 1px dashed black;
+    }
+    a:hover {
+        background-color: rgba($color: $main, $alpha: 0.4);
+    }
 }
 
 .projects-flex {
