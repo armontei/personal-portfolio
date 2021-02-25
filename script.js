@@ -32,11 +32,10 @@ function downHandler() {
 // Mobile navigation slider
 const menu = document.querySelector('.mobile-menu');
 const nav = document.querySelector('.nav-links');
-const menuIcon = document.querySelector('.mobile-menu');
 
 function navSlide() {
     nav.classList.toggle('nav-open');
-    menuIcon.classList.toggle('close');
+    menu.classList.toggle('close');
 }
 
 menu.addEventListener('click', navSlide);
