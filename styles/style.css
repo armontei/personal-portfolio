@@ -580,8 +580,8 @@ h4 {
 .skills-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20%;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1008,8 +1008,13 @@ footer {
             transform: rotate(45deg) translate(-5px, -6px);
   }
   .skills-container {
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .skills-container li {
+    margin: 20px 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   .contact-container {
     -webkit-box-orient: vertical;

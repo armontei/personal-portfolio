@@ -108,7 +108,11 @@
     }
 
     .skills-container {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(3, 1fr);
+        li {
+            margin: 20px 0;
+            transform: scale(0.9);
+        }
     }
 
     .contact-container {
