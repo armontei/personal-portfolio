@@ -28,7 +28,7 @@
         height: 60vw;
         margin: 0 auto 30px;
     }
-    .projects-grid {
+    .projects-bkgd .projects-grid {
         grid-template-columns: 1fr;
     }
 
@@ -127,7 +127,7 @@
 
     .form-container {
         margin: 0 auto;
-        p:nth-of-type(3) {
+        p {
             text-align: center;
         }
     }

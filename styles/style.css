@@ -917,7 +917,7 @@ footer {
     height: 60vw;
     margin: 0 auto 30px;
   }
-  .projects-grid {
+  .projects-bkgd .projects-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -1029,7 +1029,7 @@ footer {
   .form-container {
     margin: 0 auto;
   }
-  .form-container p:nth-of-type(3) {
+  .form-container p {
     text-align: center;
   }
 }
