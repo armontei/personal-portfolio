@@ -19,8 +19,7 @@
         transform: scale(1);
     }
 
-    .about-container,
-    .projects-flex:nth-of-type(even) {
+    .about-container {
         flex-direction: column;
     }
 
@@ -29,15 +28,8 @@
         height: 60vw;
         margin: 0 auto 30px;
     }
-
-    .projects-flex:nth-of-type(odd) {
-        flex-direction: column-reverse;
-    }
-    .projects-flex img {
-        width: 100%;
-    }
-    .projects-flex span {
-        text-align: center;
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
 }
@@ -154,7 +146,7 @@
         height: 80vw;
     }
 
-    .projects-flex {
+    .projects-bkgd .content-box {
         margin: 30px 5px;
     }
 

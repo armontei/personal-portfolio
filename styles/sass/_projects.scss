@@ -3,40 +3,26 @@
     background: url(../assets/139991X3.png);
     background-attachment: fixed;
     overflow: hidden;
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     div h3 {
         padding-top: 60px;
     }
     .content-box:nth-of-type(odd) {
         box-shadow: -10px 10px rgba($color: $main, $alpha: 0.5);
     }
-}
-
-.directoryLink {
-    font-weight: bold;
-    a {
-        border-bottom: 1px dashed black;
-    }
-    a:hover {
-        background-color: rgba($color: $main, $alpha: 0.4);
-    }
-}
-
-.projects-flex {
-    display: flex;
+    .content-box {
     border: 3px outset $main;
     margin: 40px 20px;
-    img,
-    div {
-        padding: 0 10px
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
     img {
         object-fit: contain;
-        width: 50%;
-    }
-    div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        margin: 0 auto 30px;
     }
     p {
         margin-bottom: 15px;
@@ -47,6 +33,18 @@
     a {
         display: inline-block;
         width: 14rem;
+        margin: 10px;
+    }
+}
+}
+
+.directoryLink {
+    font-weight: bold;
+    a {
+        border-bottom: 1px dashed black;
+    }
+    a:hover {
+        background-color: rgba($color: $main, $alpha: 0.4);
     }
 }
 
